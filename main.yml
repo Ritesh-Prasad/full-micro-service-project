@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: apps/v2
 kind: Deployment
 metadata:
   name: netflix-deploy
@@ -21,7 +21,7 @@ spec:
         - containerPort: 8080  
 
 ---
-apiVersion: v1
+apiVersion: v2
 kind: Service
 metadata:
   name: service1
