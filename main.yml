@@ -16,7 +16,8 @@ spec:
     spec:
       containers:
       - name: cont1
-        image: riteshprasad07/netflixproject02:v1
+        image: riteshprasad07/netflixproject02:v2
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080  
 
