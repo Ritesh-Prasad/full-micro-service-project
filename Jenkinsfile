@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('code'){
             steps{
-                git 'https://github.com/RAHAMSHAIK007/jenkins-java-project.git'
+                git 'https://github.com/Ritesh-Prasad/full-micro-service-project.git'
             }
         }
         stage('Build'){
