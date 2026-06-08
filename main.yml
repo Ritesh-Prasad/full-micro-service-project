@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: cont1
-        image: riteshprasad07/mydockerproject3:latest
+        image: riteshprasad07/netflixproject02:latest
         ports:
         - containerPort: 8080  
 
