@@ -32,7 +32,7 @@ pipeline{
         stage('Tag & Push'){
             steps{
                 withDockerRegistry(credentialsId: 'dockerhub', url: 'https://index.docker.io/v1/') {
-                    sh 'docker tag netflix2 riteshprasad07/netflixproject03:v1'
+                    sh 'docker tag netflix3 riteshprasad07/netflixproject03:v1'
                     sh 'docker push riteshprasad07/netflixproject03:v1'
                 }
             }
