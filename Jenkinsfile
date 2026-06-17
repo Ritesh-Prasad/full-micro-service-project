@@ -21,7 +21,7 @@ pipeline{
         }
         stage('Artifacts'){
             steps{
-                sh 'mvn package'
+                sh 'mvn clean package'
             }
         }
         stage('build image'){
