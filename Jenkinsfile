@@ -26,14 +26,14 @@ pipeline{
         }
         stage('build image'){
             steps{
-                sh 'docker build -t netflix2 .'
+                sh 'docker build -t netflix3 .'
             }
         }
         stage('Tag & Push'){
             steps{
                 withDockerRegistry(credentialsId: 'dockerhub', url: 'https://index.docker.io/v1/') {
-                    sh 'docker tag netflix2 riteshprasad07/netflixproject02:v3'
-                    sh 'docker push riteshprasad07/netflixproject02:v3'
+                    sh 'docker tag netflix2 riteshprasad07/netflixproject03:v1'
+                    sh 'docker push riteshprasad07/netflixproject03:v1'
                 }
             }
         }
