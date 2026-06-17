@@ -26,7 +26,7 @@ pipeline{
         }
         stage('build image'){
             steps{
-                sh 'docker build -t netflix3 .'
+                sh 'docker build --no-cache -t netflix3 .'
             }
         }
         stage('Tag & Push'){
